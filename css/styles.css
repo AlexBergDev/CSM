@@ -1,4 +1,4 @@
-/* --- Community Science Museum Stylesheet --- */
+/* --- - --- Community Science Museum Stylesheet --- - --- */
 
 
 /* Fonts */
@@ -31,11 +31,27 @@
     src: local('Avenir Black'), url('../fonts/Metropolis-Bold.otf') format('otf');
 }
 
+
 /* --- Global Styles --- */
 
 html, body {
     margin: 0;
     padding: 0;
+}
+
+
+/* Fonts */
+
+h1, {
+    font-family: 'Avenir Black', Tahoma, Verdana, sans-serif;
+}
+
+h2, {
+    font-family: 'Avenir Roman', Tahoma, Verdana, sans-serif;
+}
+
+p, {
+    font-family: 'Avenir Light', Tahoma, Verdana, sans-serif;
 }
 
 
@@ -52,6 +68,7 @@ header {
     max-height: 100px;
 }
 
+
 /* Footer*/
 
 footer {
@@ -61,7 +78,7 @@ footer {
 
 /* Index Picture */
 
-section {
+.index-image {
     background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,6 +124,70 @@ nav a:hover {
 
 @media only screen and (max-width:790px) {
 
+
+    /* Grid Containers */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content max-content min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "header"
+          "main"
+          "main"
+          "main"
+          "main"
+          "main"
+          "footer"
+          "footer"
+          "footer"
+          "footer";
+      }
+
+      header { grid-area: header; }
+      main { grid-area: main; }
+      footer { grid-area: footer; }
+ 
+
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "index-image"
+          "column-1"
+          "column-2"
+          "column-3"
+          "newsletter";
+      }
+
+      .column-1 { grid-area: column-1; }
+      .column-2 { grid-area: column-2; }
+      .column-3 { grid-area: column-3; }
+      .index-image { grid-area: index-image; }
+      .newsletter { grid-area: newsletter; }
+
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "footer1"
+          "footer2"
+          "footer3"
+          "footer4";
+      }
+
+      .footer4 { grid-area: footer4; }
+      .footer1 { grid-area: footer1; }
+      .footer2 { grid-area: footer2; }
+      .footer3 { grid-area: footer3; }
+
+
     /* Navigation */
 
     .hamburger-label{
@@ -127,6 +208,66 @@ nav a:hover {
 /* --- tablet styles --- */
 
 @media only screen and (min-width:791px) and (max-width:1350px) {
+
+
+    /* Grid Containers */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content max-content min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "header header"
+          "main main"
+          "main main"
+          "main main"
+          "main main"
+          "main main"
+          "footer footer"
+          "footer footer"
+          "footer footer";
+      }
+
+      header { grid-area: header; }
+      main { grid-area: main; }
+      footer { grid-area: footer; }
+ 
+
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "index-image index-image"
+          "column-1 column-2"
+          "column-3 ."
+          "newsletter newsletter";
+      }
+
+      .column-1 { grid-area: column-1; }
+      .column-2 { grid-area: column-2; }
+      .column-3 { grid-area: column-3; }
+      .index-image { grid-area: index-image; }
+      .newsletter { grid-area: newsletter; }
+
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "footer1 footer2"
+          "footer3 ."
+          "footer4 footer4";
+      }
+
+      .footer4 { grid-area: footer4; }
+      .footer1 { grid-area: footer1; }
+      .footer2 { grid-area: footer2; }
+      .footer3 { grid-area: footer3; }
 
 
     /* Navigation */
@@ -160,6 +301,61 @@ nav a:hover {
 /* --- desktop styles --- */
 
 @media only screen and (min-width:1351px) {
+
+    
+    /* Grid Containers */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content max-content min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "header header header"
+          "main main main"
+          "main main main"
+          "main main main"
+          "footer footer footer"
+          "footer footer footer";
+      }
+
+      header { grid-area: header; }
+      main { grid-area: main; }
+      footer { grid-area: footer; }
+ 
+
+    .grid-container-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "index-image index-image index-image"
+          "column-1 column-2 column-3"
+          "newsletter newsletter newsletter";
+      }
+
+      .column-1 { grid-area: column-1; }
+      .column-2 { grid-area: column-2; }
+      .column-3 { grid-area: column-3; }
+      .index-image { grid-area: index-image; }
+      .newsletter { grid-area: newsletter; }
+
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        gap: 0px 0px;
+        grid-template-areas:
+          "footer1 footer2 footer3"
+          "footer4 footer4 footer4";
+      }
+
+      .footer4 { grid-area: footer4; }
+      .footer1 { grid-area: footer1; }
+      .footer2 { grid-area: footer2; }
+      .footer3 { grid-area: footer3; }
 
 
     /* Navigation */
