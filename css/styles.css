@@ -68,6 +68,7 @@ h1 {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h2 {
@@ -80,6 +81,7 @@ h2 {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h3 {
@@ -92,6 +94,7 @@ h3 {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -104,6 +107,7 @@ p {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -116,6 +120,7 @@ a {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     display: block;
 }
 
@@ -205,12 +210,16 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #999595;
 }
 
 .current {
-    font-weight: bold;
-    text-decoration: underline;
-    color: black;
+    color: #999595;
+}
+
+.current:hover {
+    text-decoration: none;
+    cursor: default;
 }
 
 
@@ -278,6 +287,17 @@ button:hover {
 }
 
 
+/* Columns */
+
+.column-1 img, .column-2 img, .column-3 img {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 5px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
 /* Newsletter */
 
 input[type=text] {
@@ -297,10 +317,13 @@ input[type=text] {
     line-height: 1.15;
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     left: 50%;
     top: 50%;
     margin:auto;
     display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* --- Mobile Styles --- */
@@ -385,12 +408,7 @@ input[type=text] {
     }
 
     .column-1 img, .column-2 img, .column-3 img {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
         max-width: 80%;
-        display: flex;
-        margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -508,12 +526,7 @@ input[type=text] {
     }
 
     .column-1 img, .column-2 img, .column-3 img {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
         width: 300px;
-        display: flex;
-        margin: 0 auto;
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -628,12 +641,7 @@ input[type=text] {
     }
 
     .column-1 img, .column-2 img, .column-3 img {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
         width: 270px;
-        display: flex;
-        margin: 0 auto;
         margin-top: 40px;
         margin-bottom: 40px;
     }
