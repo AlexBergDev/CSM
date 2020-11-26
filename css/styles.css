@@ -127,17 +127,17 @@ a:hover {
     text-align: center;
 }
 
+
 /* Header */
 
 .logo {
     max-width: 250px;
     float: left;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 header {
     background: white;
-    max-height: 100px;
 }
 
 
@@ -368,6 +368,10 @@ input[type=text] {
         display: block;
     }
 
+    nav a{
+        padding: 20px;
+    }
+
 
     /* Columns */
 
@@ -468,6 +472,7 @@ input[type=text] {
     
     nav {
         display: inline-block;
+        float: right;
     }
     
     .hamburger-label {
@@ -475,7 +480,7 @@ input[type=text] {
     }
     
     nav ul {
-        display: flex;
+        display: block;
     }
     
     nav li {
@@ -483,7 +488,8 @@ input[type=text] {
     }
     
     nav a {
-        padding: 19% 40px;
+        padding: 5% 24px;
+        font-size: 18px;
     }
 
 
@@ -573,6 +579,7 @@ input[type=text] {
     
     nav {
         display: inline-block;
+        float: right;
     }
     
     .hamburger-label {
@@ -580,7 +587,7 @@ input[type=text] {
     }
     
     nav ul {
-        display: flex;
+        display: block;
     }
     
     nav li {
@@ -588,7 +595,8 @@ input[type=text] {
     }
     
     nav a {
-        padding: 19% 40px;
+        padding: 5% 30px;
+        margin-bottom: -10px;
     }
 
 
