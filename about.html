@@ -1,62 +1,138 @@
 <!doctype html>
 <html>
     <head>
-        <title>Community Science Museum - About Us</title>
+        <title>Community Science Museum - About</title>
         <meta name="description" content="Find out more about our Museum.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Community Science Museum">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="museum.html">Museum</a></li>
-                    <li><a href="visit.html">Visit</a></li>
-                    <li><a href="exhibition.html">Exhibition</a></li>
-                    <li><a href="index.html">Search</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <a href="index.html">Home</a>
-            <p>/ About</p>
-            <h2>Support</h2>
-                <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
-            <h2>Internships</h2>
-                <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
-            <h2>Volunteer</h2>
-                <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
-            <h2>Contact</h2>
-                <p>Feel free to contact us at: +1 000 000 000 +47 00 00 00 example@csm.com</p>
-        
-        <h2>Subscribe to our Newsletter</h2>
-                <a href="index.html">SUBSCRIBE</a>
-        </main>
-        <footer>
-            <h3>Links</h3>
-                <a href="about.html">Terms & Conditions</a>
-                <a href="about.html">Privacy Policy</a>
-                <a href="about.html">About Us</a>
-                <a href="about.html">Newsletter</a>
-            <h3>Help</h3>
-                <a href="about.html">Contact</a>
-                <a href="about.html">FAQ</a>
-            <h3>Visit</h3>
-                <a href="visit.html">Programs</a>
-                <a href="visit.html">Address</a>
-                <a href="visit.html">Events</a>
-                <nav>
-                    <div class="iconsdown">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <div class="grid-container">
+            <header>
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
+                </a>
+
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="museum.html">MUSEUM</a></li>
+                            <li><a href="visit.html">VISIT</a></li>
+                            <li><a href="exhibition.html">EXHIBITION</a></li>
+                            <li><a href="index.html">SEARCH</a></li>
+
+                        </ul>
+                    </nav>
+
+            </header>
+            <main>
+                <div class="grid-container-main">
+
+
+                <div class="column-1">
+
+                    <h2>Support</h2>
+                    
+                    <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community. You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+                
+                </div>
+
+
+                <div class="column-2">
+
+                    <h2>Internships</h2>
+                
+                    <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum. You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+                
+                </div>
+
+
+                <div class="column-3">
+
+                    <h2>Volunteer</h2>
+                
+                    <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
+            
+                    <h2>Contact</h2>
+                
+                    <p>Feel free to contact us at: +1 000 000 000 +47 00 00 00 example@csm.com</p>
+
+                </div>
+
+
+                <div class="newsletter">
+
+                    <h2>Contact Us</h2>
+
+                    <input type="text" placeholder="Type in your name.." name="name" required>
+
+                    <input type="text" placeholder="Type in your email.." name="mail" required>
+
+                    <input type="text" placeholder="Type in your message.." name="message" required>
+
+                    <button onclick="location.href='about.html'" type="button">SEND</button>
+
+                </div>
+                
+                </div>
+            </main>
+            <footer>
+                <div class="grid-container-footer">
+
+                    <div class="footer1">
+
+                        <h3>Links</h3>
+
+                            <a href="about.html">Terms & Conditions</a>
+                            <a href="about.html">Privacy Policy</a>
+                            <a href="about.html">About Us</a>
+                            <a href="about.html">Newsletter</a>
+
                     </div>
-                </nav>
-            Copyright &copy; 2020 Community Science Museum. All rights reserved.
-        </footer>
+
+                    <div class="footer2">
+
+                        <h3>Help</h3>
+
+                            <a href="about.html">Contact</a>
+                            <a href="about.html">FAQ</a>
+
+                    </div>
+
+                    <div class="footer3">
+
+                        <h3>Visit</h3>
+
+                            <a href="visit.html">Programs</a>
+                            <a href="visit.html">Address</a>
+                            <a href="visit.html">Events</a>
+
+                    </div>
+
+                    <div class="footer4">
+
+                        <nav>
+                            <div class="iconsdown">
+
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                            </div>
+                        </nav>
+
+                        <div class="line"></div>
+
+                        <p>Copyright &copy; 2020 Community Science Museum. All rights reserved.</p>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
