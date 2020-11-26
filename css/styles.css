@@ -369,7 +369,7 @@ input[type=text] {
     }
 
     nav a{
-        padding: 20px;
+        padding: 30px;
     }
 
 
@@ -412,6 +412,10 @@ input[type=text] {
 
     .footer4 p {
         margin: 40px;
+    }
+
+    .line {
+        margin-top: 40px;
     }
 }
 
