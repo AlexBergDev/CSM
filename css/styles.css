@@ -255,8 +255,9 @@ button:hover {
 
 .iconsdown{
     display: flex;
-    left: 50%;
-    right: 50%;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .iconsdown a {
@@ -271,19 +272,13 @@ button:hover {
     cursor: pointer;
     font-size: 20px;
     color: #6F6B6B;
+    margin: 10px;
 }
 
 .iconsdown a:hover {
     background-color: #6F6B6B;
     color: white;
     text-decoration: none;
-}
-
-
-/* Remove when icons are fixed */
-
-.iconsdown a{
-    display: none;
 }
 
 
