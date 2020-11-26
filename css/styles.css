@@ -123,6 +123,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.footer4 p, h1, .index-image p {
+    text-align: center;
+}
+
 /* Header */
 
 .logo {
@@ -201,12 +205,38 @@ button {
     font-size: 14px;
     transition-duration: 0.4s;
     cursor: pointer;
-    -webkit-filter: brightness(100%);
 }
   
-  button:hover {
+button:hover {
     background-color: #3C3C3C;
     color: white;
+}
+
+
+/* Icons */
+
+.iconsdown{
+    display: flex;
+}
+
+.iconsdown a {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 2px solid #6F6B6B;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 20px;
+    color: #6F6B6B;
+}
+
+.iconsdown a:hover {
+    background-color: #6F6B6B;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -274,13 +304,38 @@ button {
     #hamburger-menu:checked ~ nav {
         display: block;
     }
+
+
+    /* Columns */
+
+    .column-1 p, .column-2 p, .column-3 p, .column-1 h2, .column-2 h2, .column-3 h2 {
+        max-width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer1 h3, .footer2 h3, .footer3 h3, .footer1 a, .footer2 a, .footer3 a {
+    }
+
+    .column-1 img, .column-2 img, .column-3 img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 80%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
    
 }
 
 
 /* --- Tablet Styles --- */
 
-@media only screen and (min-width:791px) and (max-width:1350px) {
+@media only screen and (min-width:791px) and (max-width:950px) {
 
 
     /* Grid Containers */
@@ -351,12 +406,31 @@ button {
     nav a {
         padding: 19% 40px;
     }
+
+
+    /* Columns */
+
+    .column-1, .column-2, .column-3, .footer1, .footer2, .footer3 {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .column-1 img, .column-2 img, .column-3 img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+      }
 }
 
 
 /* --- Desktop Styles --- */
 
-@media only screen and (min-width:1351px) {
+@media only screen and (min-width:951px) {
 
     
     /* Grid Containers */
@@ -422,4 +496,24 @@ button {
     nav a {
         padding: 19% 40px;
     }
+
+
+    /* Columns */
+
+    .column-1, .column-2, .column-3, .footer1, .footer2, .footer3 {
+        max-width: 270px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .column-1 img, .column-2 img, .column-3 img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 270px;
+        display: flex;
+        margin: 0 auto;
+      }
+
 }
