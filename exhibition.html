@@ -1,68 +1,146 @@
 <!doctype html>
 <html>
     <head>
-        <title>Community Science Museum - Exhibition</title>
+        <title>Community Science Museum - Exhibiton</title>
         <meta name="description" content="All our exhibitions and events.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Community Science Museum">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="museum.html">Museum</a></li>
-                    <li><a href="visit.html">Visit</a></li>
-                    <li><a href="exhibition.html">Exhibition</a></li>
-                    <li><a href="index.html">Search</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <a href="index.html">Home</a>
-            <p>/ Exhibition</p>
-            <h2>Cosmology</h2>
-                <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-                <img src="images/exhibition/moon_cycle.jpg" alt="Picture of the moon cycle">
-            <h2>Evolution</h2>
-                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-            <h2>Biology and Medicine</h2>
-                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
-                <img src="images/exhibition/human_anatomy.jpg" alt="Model of the human anatomy">
-            <h2>Robotics and AI</h2>
-                <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
-                <img src="images/exhibition/scientist_machine.jpg" alt="Researcher working on machine">
-            <h2>Ecology</h2>
-                <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-                <img src="images/exhibition/lab_material.jpg" alt="Picture of various lab material">
+        <div class="grid-container">
+            <header>
 
-        <h2>Subscribe to our Newsletter</h2>
-                <a href="index.html">SUBSCRIBE</a>
-        </main>
-        <footer>
-            <h3>Links</h3>
-                <a href="about.html">Terms & Conditions</a>
-                <a href="about.html">Privacy Policy</a>
-                <a href="about.html">About Us</a>
-                <a href="about.html">Newsletter</a>
-            <h3>Help</h3>
-                <a href="about.html">Contact</a>
-                <a href="about.html">FAQ</a>
-            <h3>Visit</h3>
-                <a href="visit.html">Programs</a>
-                <a href="visit.html">Address</a>
-                <a href="visit.html">Events</a>
-                <nav>
-                    <div class="iconsdown">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
+                </a>
+
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="museum.html">MUSEUM</a></li>
+                            <li><a href="visit.html">VISIT</a></li>
+                            <li><a href="exhibition.html" class="current">EXHIBITION</a></li>
+                            <li><a href="index.html">SEARCH</a></li>
+
+                        </ul>
+                    </nav>
+
+            </header>
+            <main>
+                <div class="grid-container-main">
+
+
+                <div class="column-1">
+
+                    <h2>Cosmology</h2>
+
+                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+                    
+                    <img src="images/exhibition/moon_cycle.jpg" alt="Picture of the moon cycle">
+                
+                    <h2>Evolution</h2>
+                    
+                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                
+                </div>
+
+
+                <div class="column-2">
+
+                    <h2>Biology and Medicine</h2>
+                
+                    <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                
+                    <img src="images/exhibition/human_anatomy.jpg" alt="Model of the human anatomy">
+            
+                    <h2>Robotics and AI</h2>
+                
+                    <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+                
+                </div>
+
+
+                <div class="column-3">
+
+                    <img src="images/exhibition/scientist_machine.jpg" alt="Researcher working on machine">
+                    
+                    <h2>Ecology</h2>
+                    
+                    <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet. In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
+                    
+                    <img src="images/exhibition/lab_material.jpg" alt="Picture of various lab material">  
+
+                </div>
+
+
+                <div class="newsletter">
+
+                    <h2>Subscribe to our Newsletter</h2>
+
+                    <input type="text" placeholder="Type in your email.." name="mail" required>
+
+                    <button onclick="location.href='about.html'" type="button">SUBSCRIBE</button>
+
+                </div>
+                
+                </div>
+            </main>
+            <footer>
+                <div class="grid-container-footer">
+
+                    <div class="footer1">
+
+                        <h3>Links</h3>
+
+                            <a href="about.html">Terms & Conditions</a>
+                            <a href="about.html">Privacy Policy</a>
+                            <a href="about.html">About Us</a>
+                            <a href="about.html">Newsletter</a>
+
                     </div>
-                </nav>
-            Copyright &copy; 2020 Community Science Museum. All rights reserved.
-        </footer>
+
+                    <div class="footer2">
+
+                        <h3>Help</h3>
+
+                            <a href="about.html">Contact</a>
+                            <a href="about.html">FAQ</a>
+
+                    </div>
+
+                    <div class="footer3">
+
+                        <h3>Visit</h3>
+
+                            <a href="visit.html">Programs</a>
+                            <a href="visit.html">Address</a>
+                            <a href="visit.html">Events</a>
+
+                    </div>
+
+                    <div class="footer4">
+
+                        <nav>
+                            <div class="iconsdown">
+
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                            </div>
+                        </nav>
+
+                        <div class="line"></div>
+
+                        <p>Copyright &copy; 2020 Community Science Museum. All rights reserved.</p>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
