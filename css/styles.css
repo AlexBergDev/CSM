@@ -108,6 +108,7 @@ p {
     letter-spacing: -.02em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin : 0;
 }
 
 a {
@@ -206,6 +207,9 @@ nav a {
     color: #3C3C3C;
     padding: 2px;
     display: block;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
 }
 
 nav a:hover {
@@ -318,7 +322,24 @@ input[type=text] {
     margin:auto;
     display:block;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+label {
+    color: #6F6B6B;
+    text-decoration: none;
+    font-family: 'Avenir Light', Tahoma, Verdana, sans-serif;
+    font-weight: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin : 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 /* --- Mobile Styles --- */
