@@ -225,7 +225,7 @@ button:hover {
     color: white;
 }
 
-.newsletter button {
+.newsletter button, .index-image button{
     margin:auto;
     display:block;
     margin-top: 30px;
@@ -237,6 +237,8 @@ button:hover {
 
 .iconsdown{
     display: flex;
+    left: 50%;
+    right: 50%;
 }
 
 .iconsdown a {
@@ -372,6 +374,19 @@ input[type=text] {
     }
 
 
+    /* Intro */
+
+    .intro {
+        background: #9AC0BA;
+        width: 60%;
+        padding: 30px;
+        padding-bottom: 4px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
     /* Footer */
 
     .footer4 p {
@@ -474,6 +489,19 @@ input[type=text] {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+
+    /* Intro */
+
+    .intro {
+        background: #9AC0BA;
+        width: 40%;
+        padding: 30px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: -60px;
+    }
 }
 
 
@@ -544,6 +572,19 @@ input[type=text] {
     
     nav a {
         padding: 19% 40px;
+    }
+
+
+    /* Intro */
+
+    .intro {
+        background: #9AC0BA;
+        width: 30%;
+        padding: 30px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: -60px;
     }
 
 
