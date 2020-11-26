@@ -369,6 +369,12 @@ input[type=text] {
     .footer1 h3, .footer2 h3, .footer3 h3 {
         margin-top: 40px;
     }
+
+    /* Copyright */
+
+    .footer4 p {
+        margin: 40px;
+    }
 }
 
 
