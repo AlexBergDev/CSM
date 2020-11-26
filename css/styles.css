@@ -160,6 +160,15 @@ footer {
     margin: 30px;
 }
 
+.line {
+    border: 1px solid #6F6B6B;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    margin:auto;
+    display:block;
+}
+
 
 /* Index Picture */
 
@@ -260,6 +269,14 @@ button:hover {
     color: white;
     text-decoration: none;
 }
+
+
+/* Remove when icons are fixed */
+
+.iconsdown a{
+    display: none;
+}
+
 
 /* Newsletter */
 
