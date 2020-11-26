@@ -8,58 +8,133 @@
         <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Community Science Museum">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="museum.html">Museum</a></li>
-                    <li><a href="visit.html">Visit</a></li>
-                    <li><a href="exhibition.html">Exhibition</a></li>
-                    <li><a href="index.html">Search</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <a href="index.html">Home</a>
-            <p>/ Museum</p>
-                <img src="images/museum/boy_reading.jpg" alt="Boy reading a book and sitting on books">
-            <h2>For teachers</h2>
-                <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
-                <img src="images/museum/researcher.jpg" alt="Researcher working">
-            <h2>For kids</h2>
-                <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do. You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
-                <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts. During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
-                <img src="images/museum/boy_vrheadset.jpg" alt="Boy wearing VR-headset">
-            <h2>For researchers</h2>
-                <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
-                <img src="images/museum/skeletons.jpg" alt="Two skeletons">
+        <div class="grid-container">
+            <header>
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
+                </a>
+
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="museum.html" class="current">MUSEUM</a></li>
+                            <li><a href="visit.html">VISIT</a></li>
+                            <li><a href="exhibition.html">EXHIBITION</a></li>
+                            <li><a href="index.html">SEARCH</a></li>
+
+                        </ul>
+                    </nav>
+
+            </header>
+            <main>
+                <div class="grid-container-main">
+
+
+                <div class="column-1">
+
+                    <img src="images/museum/boy_reading.jpg" alt="Boy reading a book and sitting on books">
                 
-            <h2>Subscribe to our Newsletter</h2>
-                <a href="index.html">SUBSCRIBE</a>
-        </main>
-        <footer>
-            <h3>Links</h3>
-                <a href="about.html">Terms & Conditions</a>
-                <a href="about.html">Privacy Policy</a>
-                <a href="about.html">About Us</a>
-                <a href="about.html">Newsletter</a>
-            <h3>Help</h3>
-                <a href="about.html">Contact</a>
-                <a href="about.html">FAQ</a>
-            <h3>Visit</h3>
-                <a href="visit.html">Programs</a>
-                <a href="visit.html">Address</a>
-                <a href="visit.html">Events</a>
-                <nav>
-                    <div class="iconsdown">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <h2>For Teachers</h2>
+                
+                    <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
+                
+                    <img src="images/museum/researcher.jpg" alt="Researcher working">
+                
+                </div>
+
+
+                <div class="column-2">
+
+                <h2>For Kids</h2>
+
+                <p>Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do. You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.</p>
+                
+                <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts. During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
+                
+                <img src="images/museum/boy_vrheadset.jpg" alt="Boy wearing VR-headset">
+                
+                </div>
+
+
+                <div class="column-3">
+
+                    <h2>For Researchers</h2>
+                    
+                    <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
+                    
+                    <img src="images/museum/skeletons.jpg" alt="Two skeletons">
+
+                </div>
+
+
+                <div class="newsletter">
+
+                    <h2>Subscribe to our Newsletter</h2>
+
+                    <input type="text" placeholder="Type in your email.." name="mail" required>
+
+                    <button onclick="location.href='about.html'" type="button">SUBSCRIBE</button>
+
+                </div>
+                
+                </div>
+            </main>
+            <footer>
+                <div class="grid-container-footer">
+
+                    <div class="footer1">
+
+                        <h3>Links</h3>
+
+                            <a href="about.html">Terms & Conditions</a>
+                            <a href="about.html">Privacy Policy</a>
+                            <a href="about.html">About Us</a>
+                            <a href="about.html">Newsletter</a>
+
                     </div>
-                </nav>
-            Copyright &copy; 2020 Community Science Museum. All rights reserved.
-        </footer>
+
+                    <div class="footer2">
+
+                        <h3>Help</h3>
+
+                            <a href="about.html">Contact</a>
+                            <a href="about.html">FAQ</a>
+
+                    </div>
+
+                    <div class="footer3">
+
+                        <h3>Visit</h3>
+
+                            <a href="visit.html">Programs</a>
+                            <a href="visit.html">Address</a>
+                            <a href="visit.html">Events</a>
+
+                    </div>
+
+                    <div class="footer4">
+
+                        <nav>
+                            <div class="iconsdown">
+
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                            </div>
+                        </nav>
+
+                        <div class="line"></div>
+
+                        <p>Copyright &copy; 2020 Community Science Museum. All rights reserved.</p>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
