@@ -255,6 +255,7 @@ input[type=text] {
     display: inline-block;
     border: 1px solid #6F6B6B;
     box-sizing: border-box;
+    border-radius: 0;
     color: #6F6B6B;
     text-decoration: none;
     font-family: 'Avenir Light', Tahoma, Verdana, sans-serif;
