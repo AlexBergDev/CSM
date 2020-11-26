@@ -366,6 +366,7 @@ input[type=text] {
     
     #hamburger-menu:checked ~ nav {
         display: block;
+        float: left;
     }
 
     nav a{
