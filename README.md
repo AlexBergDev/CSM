@@ -7,4 +7,6 @@ The site should appeal to youngsters without pandering; it should take for grant
 The website should be informative and engaging, but should encourage viewers to visit the museum itself.
 The website should be responsive and be easy to use on a variety of devices.
 
+Visit the deployed live version on: https://alexdasilva-csm.netlify.app
+
 Version 1.0
