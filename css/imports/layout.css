@@ -8,6 +8,16 @@ ul {
   list-style: none;
 }
 
+.col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: -10px auto 0 auto;
+}
+
 /* Grid Areas */
 
 header {
