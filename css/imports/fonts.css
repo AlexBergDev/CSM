@@ -104,6 +104,7 @@ a:hover {
 .footer4 p,
 h1,
 .index-image p,
-.newsletter h2 {
+.newsletter h2,
+.contact-text {
   text-align: center;
 }
