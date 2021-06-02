@@ -10,25 +10,34 @@
     <body>
         <div class="grid-container">
             <header>
-
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
-                </a>
-
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-
-                    <nav>
-                        <ul>
-                            
-                            <li><a href="museum.html">MUSEUM</a></li>
-                            <li><a href="visit.html" class="current">VISIT</a></li>
-                            <li><a href="exhibition.html">EXHIBITION</a></li>
-                            <li><a href="index.html">SEARCH</a></li>
-
-                        </ul>
-                    </nav>
-
+            
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Community Science Museum" class="logo-svg">
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="museum.html">Museum</a>
+                        </li>
+                        <li>
+                            <a href="visit.html" class="current">Visit</a>
+                        </li>
+                        <li>
+                            <a href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+    
             </header>
             <main>
                 <div class="grid-container-main">
@@ -40,7 +49,7 @@
                 
                 <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
                 
-                <img src="images/visit/geometric_shape.jpg" alt="Geometric shape">
+                <img src="images/visit/geometric_shape.jpg" alt="Geometric shape" onclick="onClick(this)" class="modal-hover-opacity">
             
                 <h2>Night in the Museum</h2>
                 
@@ -55,7 +64,7 @@
 
                 <div class="column-2">
 
-                    <img src="images/visit/museum_hall.jpg" alt="View into a museum hall">
+                    <img src="images/visit/museum_hall.jpg" alt="View into a museum hall" onclick="onClick(this)" class="modal-hover-opacity">
             
                     <h2>Location</h2>
                 
@@ -87,7 +96,7 @@
                 
                     <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
                 
-                    <img src="images/visit/colorful_museum_outside.jpg" alt="Colorful museum banner outside with ther letters museum">
+                    <img src="images/visit/colorful_museum_outside.jpg" alt="Colorful museum banner outside with ther letters museum" onclick="onClick(this)" class="modal-hover-opacity">
            
                     <h2>Food and drink</h2>
                 
@@ -97,8 +106,15 @@
                 
                     <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
                 
-                    <img src="images/visit/museum_fossil_midair.jpg" alt="Museum hall with a hanging fossil">
+                    <img src="images/visit/museum_fossil_midair.jpg" alt="Museum hall with a hanging fossil" onclick="onClick(this)" class="modal-hover-opacity">
 
+                </div>
+
+                <div class="str-ModalBack"></div>
+                <div id="modal01" class="modal" onclick="this.style.display='none'">
+                    <div class="modal-content">
+                    <img id="img01" style="max-width:100%">
+                    </div>
                 </div>
 
 
@@ -165,5 +181,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/components/navigation.js"></script>
+        <script src="js/components/imageViewer.js"></script>
     </body>
 </html>
