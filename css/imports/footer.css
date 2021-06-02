@@ -1,0 +1,45 @@
+/* Footer */
+footer {
+  background: var(--gold);
+}
+
+.footer1 a,
+.footer2 a,
+.footer3 a,
+.footer1 h3,
+.footer2 h3,
+.footer3 h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.footer1 h3,
+.footer2 h3,
+.footer3 h3 {
+  margin-top: 40px;
+}
+
+.footer4 p {
+  margin: 30px;
+}
+
+.line {
+  border: 1px solid var(--grey);
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  display: block;
+}
+
+/* --- Mobile Styles --- */
+@media only screen and (max-width: 790px) {
+  /* Footer */
+  .footer4 p {
+    margin: 40px;
+  }
+
+  .line {
+    margin-top: 40px;
+  }
+}
