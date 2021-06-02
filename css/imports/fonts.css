@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Roman"),
+    url("../fonts/Metropolis-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Light"), url("../fonts/Metropolis-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Heavy"),
+    url("../fonts/Metropolis-SemiBold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Avenir Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir Black"), url("../fonts/Metropolis-Bold.otf") format("otf");
+}
+
+/* Fonts */
+
+h1 {
+  color: var(--dark-grey);
+  text-decoration: none;
+  font-family: "Avenir Black", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Roman", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Roman", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+a {
+  color: var(--dark-grey);
+  text-decoration: none;
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer4 p,
+h1,
+.index-image p,
+.newsletter h2 {
+  text-align: center;
+}
