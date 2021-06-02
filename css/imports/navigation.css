@@ -68,7 +68,7 @@ li .current:hover {
 /* Tablets */
 @media screen and (max-width: 1024px) {
   .nav-links {
-    width: 50%;
+    width: 63%;
   }
 }
 
