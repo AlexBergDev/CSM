@@ -10,25 +10,34 @@
     <body>
         <div class="grid-container">
             <header>
-
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
-                </a>
-
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-
-                    <nav>
-                        <ul>
-                            
-                            <li><a href="museum.html" class="current">MUSEUM</a></li>
-                            <li><a href="visit.html">VISIT</a></li>
-                            <li><a href="exhibition.html">EXHIBITION</a></li>
-                            <li><a href="index.html">SEARCH</a></li>
-
-                        </ul>
-                    </nav>
-
+            
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Community Science Museum" class="logo-svg">
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="museum.html" class="current">Museum</a>
+                        </li>
+                        <li>
+                            <a href="visit.html">Visit</a>
+                        </li>
+                        <li>
+                            <a href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+    
             </header>
             <main>
                 <div class="grid-container-main">
@@ -36,13 +45,13 @@
 
                 <div class="column-1">
 
-                    <img src="images/museum/boy_reading.jpg" alt="Boy reading a book and sitting on books">
+                    <img src="images/museum/boy_reading.jpg" alt="Boy reading a book and sitting on books" onclick="onClick(this)" class="modal-hover-opacity">
                 
                     <h2>For Teachers</h2>
                 
                     <p>As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them. Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
                 
-                    <img src="images/museum/researcher.jpg" alt="Researcher working">
+                    <img src="images/museum/researcher.jpg" alt="Researcher working" onclick="onClick(this)" class="modal-hover-opacity">
                 
                 </div>
 
@@ -55,7 +64,7 @@
                     
                     <p>We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts. During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
                     
-                    <img src="images/museum/boy_vrheadset.jpg" alt="Boy wearing VR-headset">
+                    <img src="images/museum/boy_vrheadset.jpg" alt="Boy wearing VR-headset" onclick="onClick(this)" class="modal-hover-opacity">
                 
                 </div>
 
@@ -66,8 +75,15 @@
                     
                     <p>Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.</p>
                     
-                    <img src="images/museum/skeletons.jpg" alt="Two skeletons">
+                    <img src="images/museum/skeletons.jpg" alt="Two skeletons" onclick="onClick(this)" class="modal-hover-opacity">
 
+                </div>
+
+                <div class="str-ModalBack"></div>
+                <div id="modal01" class="modal" onclick="this.style.display='none'">
+                    <div class="modal-content">
+                    <img id="img01" style="max-width:100%">
+                    </div>
                 </div>
 
 
@@ -134,5 +150,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/components/navigation.js"></script>
+        <script src="js/components/imageViewer.js"></script>
     </body>
 </html>
