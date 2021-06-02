@@ -10,25 +10,34 @@
     <body>
         <div class="grid-container">
             <header>
-
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
-                </a>
-
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-
-                    <nav>
-                        <ul>
-                            
-                            <li><a href="museum.html">MUSEUM</a></li>
-                            <li><a href="visit.html">VISIT</a></li>
-                            <li><a href="exhibition.html">EXHIBITION</a></li>
-                            <li><a href="index.html">SEARCH</a></li>
-
-                        </ul>
-                    </nav>
-
+            
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Community Science Museum" class="logo-svg">
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="museum.html">Museum</a>
+                        </li>
+                        <li>
+                            <a href="visit.html">Visit</a>
+                        </li>
+                        <li>
+                            <a href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="current">About</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+    
             </header>
             <main>
                 <div class="grid-container-main">
@@ -70,21 +79,40 @@
 
                 <div class="newsletter">
 
-                    <form action="/action_page.php">
+                    <form id="contactForm">
 
                         <h2>Contact Form</h2>
+                          
+                        <div>
+                            <label for="name">Name</label>
+                            <div class="form-error" id="nameError">Name should be more than 2 characters long</div>
+                            <input type="text" id="name" name="name" placeholder="Your name..">
+                        </div>
+                      
+                        <div>
+                            <label for="email">Email Address</label>
+                            <div class="form-error" id="emailError">Please enter a valid email address</div>
+                            <input type="text" id="email" name="email" placeholder="Your email address..">
+                        </div>
 
-                        <label for="country">Name</label>
-                        <input type="text" placeholder="Type in your name.." name="name" required>
+                        <div>
+                            <label for="name">Subject</label>
+                            <div class="form-error" id="subjectError">Subject should be more than 10 characters long</div>
+                            <input type="text" id="subject" name="subject" placeholder="The subject..">
+                        </div>
 
-                        <label for="country">E-mail</label>
-                        <input type="text" placeholder="Type in your email.." name="mail" required>
+                        <div>
+                            <label for="subject">Message</label>
+                            <div class="form-error" id="messageError">Your message must contain at least 15 characters</div>
+                            <textarea type="text" id="message" name="message" placeholder="Type your message here.." style="height:200px"></textarea>
+                        </div>
+                      
+                        <p class="contact-text">By clicking “Submit” below you agree to our terms of service and privacy policy.</p>
 
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" class="messagebox" placeholder="Type in your message.."></textarea>
+                        <div id="success"></div>
 
-                        <button onclick="location.href='#'" type="button">SEND</button>
-                   
+                        <button class="button" id="contactButton">Send</button>
+        
                     </form>
 
                 </div>
@@ -142,5 +170,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/contact.js"></script>
+        <script src="js/components/navigation.js"></script>
     </body>
 </html>
