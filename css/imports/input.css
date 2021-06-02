@@ -1,0 +1,101 @@
+/* Newsletter */
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  display: inline-block;
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
+  border-radius: 0;
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  -webkit-appearance: none;
+}
+
+textarea {
+  padding: 10px;
+  height: 140px;
+  width: 60%;
+  max-width: 500px;
+  display: inline-block;
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
+  border-radius: 0;
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  -webkit-appearance: none;
+}
+
+label {
+  color: var(--grey);
+  text-decoration: none;
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-error {
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  display: none;
+  color: var(--red);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.success {
+  font-family: "Avenir Light", Tahoma, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--green);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-text {
+  display: flex;
+  justify-content: center;
+}
