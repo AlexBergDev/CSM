@@ -37,8 +37,8 @@ h1 {
   font-weight: 0;
   font-style: normal;
   font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,8 +50,8 @@ h2 {
   font-weight: 0;
   font-style: normal;
   font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -63,8 +63,8 @@ h3 {
   font-weight: 0;
   font-style: normal;
   font-size: 18px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,8 +76,8 @@ p {
   font-weight: 0;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -90,8 +90,8 @@ a {
   font-weight: 0;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
@@ -107,4 +107,11 @@ h1,
 .newsletter h2,
 .contact-text {
   text-align: center;
+}
+
+/* --- Mobile Styles --- */
+@media only screen and (max-width: 790px) {
+  p {
+    font-size: 16px;
+  }
 }
