@@ -6,40 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/1abcb9173a.js" crossorigin="anonymous"></script>
-        <!-- Hotjar Tracking Code for https://alexdasilva-csm.netlify.app/index.html -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2269011,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
     </head>
     <body>
         <div class="grid-container">
             <header>
-
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Community Science Museum" class="logo"></a>
-                </a>
-
-                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-
-                    <nav>
-                        <ul>
-                            
-                            <li><a href="museum.html">MUSEUM</a></li>
-                            <li><a href="visit.html">VISIT</a></li>
-                            <li><a href="exhibition.html">EXHIBITION</a></li>
-                            <li><a href="index.html">SEARCH</a></li>
-
-                        </ul>
-                    </nav>
-
+            
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Community Science Museum" class="logo-svg">
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="museum.html">Museum</a>
+                        </li>
+                        <li>
+                            <a href="visit.html">Visit</a>
+                        </li>
+                        <li>
+                            <a href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+    
             </header>
             <main>
                 <div class="grid-container-main">
@@ -64,14 +62,14 @@
 
                     <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all. Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
                     
-                    <img src="images/home/girl_vr_headset.jpg" alt="Girl with VR-headset">
+                    <img src="images/home/girl_vr_headset.jpg" alt="Girl with VR-headset" onclick="onClick(this)" class="modal-hover-opacity">
                 
                 </div>
 
 
                 <div class="column-2">
 
-                    <img src="images/home/museum_fossil.jpg" alt="Museum fossil">
+                    <img src="images/home/museum_fossil.jpg" alt="Museum fossil" onclick="onClick(this)" class="modal-hover-opacity">
 
                     <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us. We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
                 
@@ -80,8 +78,15 @@
 
                 <div class="column-3">
 
-                    <img src="images/home/man_museum.jpg" alt="Man looking into museum hall">
+                    <img src="images/home/man_museum.jpg" alt="Man looking into museum hall" onclick="onClick(this)" class="modal-hover-opacity">
 
+                </div>
+
+                <div class="str-ModalBack"></div>
+                <div id="modal01" class="modal" onclick="this.style.display='none'">
+                    <div class="modal-content">
+                    <img id="img01" style="max-width:100%">
+                    </div>
                 </div>
 
 
@@ -148,5 +153,7 @@
                 </div>
             </footer>
         </div>
+        <script src="js/components/navigation.js"></script>
+        <script src="js/components/imageViewer.js"></script>
     </body>
 </html>
