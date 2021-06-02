@@ -80,13 +80,13 @@ li .current:hover {
 
   .nav-links a {
     color: var(--dark-grey);
-    padding-bottom: 80px;
+    padding: 0px;
   }
 
   .nav-links {
     position: fixed;
     right: 0px;
-    height: 92vh;
+    height: 75vh;
     top: 6vh;
     background-color: var(--gold);
     display: flex;
@@ -95,6 +95,7 @@ li .current:hover {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    padding-bottom: 140px;
   }
 
   .nav-links li {
